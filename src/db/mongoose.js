@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 //DB connection
 const URI = process.env.MONGODB_URI
   ? process.env.MONGODB_URI
-  : "mongodb://localhost:27017/dbtest";
+  : "mongodb+srv://admin:TravellersPass@cluster0.edtym.mongodb.net/travellersBlog?retryWrites=true&w=majority";
 
 mongoose.connect(URI, {
   useCreateIndex: true,
